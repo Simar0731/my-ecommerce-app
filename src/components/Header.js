@@ -54,26 +54,4 @@ const CartCount = styled.span`
   font-size: 0.9em;
 `;
 
-const Header = () => {
-  const { cartItems } = useCart();
-  const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
-  return (
-    <HeaderContainer>
-      <Logo>My E-Commerce</Logo>
-      <Nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/category/electronics">Electronics</NavLink>
-        <NavLink to="/category/fashion">Fashion</NavLink>
-        <NavLink to="/cart">
-          <CartIcon>
-            🛒
-            {totalItems > 0 && <CartCount>{totalItems}</CartCount>}
-          </CartIcon>
-        </NavLink>
-      </Nav>
-    </HeaderContainer>
-  );
-};
-
-export default Header;

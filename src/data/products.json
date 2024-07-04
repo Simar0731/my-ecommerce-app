@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "category": "electronics",
+      "name": "Product 1",
+      "price": 29.99,
+      "image": "url_to_image_1",
+      "description": "Description for product 1"
+    },
+    {
+      "id": 2,
+      "category": "fashion",
+      "name": "Product 2",
+      "price": 49.99,
+      "image": "url_to_image_2",
+      "description": "Description for product 2"
+    }
+  ]
+  
